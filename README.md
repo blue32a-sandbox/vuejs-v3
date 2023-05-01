@@ -1,2 +1,3 @@
-# vuejs-v3
-Learning Vue.js 3
+# Learning Vue.js 3
+
+https://ja.vuejs.org/
