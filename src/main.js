@@ -1,6 +1,4 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue/dist/vue.esm-bundler'
 
-import './assets/main.css'
-
-createApp(App).mount('#app')
+const app = createApp()
+app.mount('#app')
