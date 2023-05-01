@@ -8,10 +8,30 @@
   </head>
   <body>
     <div id="app">
-      <button @click="count++">{{ count }}</button>
-    </div>
-    <div id="app2">
-      <button @click="count++">{{ count }}</button>
+      <span>Message: {{ msg }}</span>
+      <p>Using text interpolation: {{ rawHtml }}</p>
+      <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+      <div v-bind:id="dynamicId">id is bound</div>
+      <div v-bind:id="notExist">id is not bound</div>
+      <button :disabled="isButtonDisabled">Button</button>
+      <div v-bind="objectOfAttrs">Bind multiple attributes</div>
+      <p>{{ number + 1 }}</p>
+      <p>{{ ok ? 'YES' : 'NO' }}</p>
+      <p>{{ message.split('').reverse().join('') }}</p>
+      <div :id="`list-${id}`">id:list-hoge</div>
+      <span :title="toTitleDate(date)">
+        {{ formatDate(date) }}
+      </span>
+      <p>{{ Math.random() }}</p>
+      <p>{{ new Date() }}</p>
+      <p v-if="seen">Now you see me</p>
+      <a v-bind:href="url">example.com</a><br>
+      <a v-on:click="doSomething">Click</a><br>
+      <a v-bind:[attributeName]="url">dynamic arguments: attribute {{ attributeName }}</a><br>
+      <a v-on:[eventName]="doSomething">dynamic arguments: event {{ eventName }}</a><br>
+      <form @submit.prevent="onSubmit">
+        <button type="submit">Submit</button>
+      </form>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
