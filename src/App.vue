@@ -1,10 +1,12 @@
 <script>
 import Home from './Home.vue'
 import Template from './Template.vue'
+import Reactivity from './Reactivity.vue'
 
 const routes = {
   '/': Home,
-  '/template': Template
+  '/template': Template,
+  '/reactivity': Reactivity
 }
 
 export default {
@@ -28,6 +30,7 @@ export default {
 
 <template>
   <a href="#/">Home</a> |
-  <a href="#/template">Template</a>
+  <a href="#/template">Template</a> |
+  <a href="#/reactivity">Reactivity</a>
   <component :is="currentView" />
 </template>
