@@ -1,4 +1,5 @@
 <script>
+import Computed from './Computed.vue'
 import Home from './Home.vue'
 import Template from './Template.vue'
 import Reactivity from './Reactivity.vue'
@@ -6,7 +7,8 @@ import Reactivity from './Reactivity.vue'
 const routes = {
   '/': Home,
   '/template': Template,
-  '/reactivity': Reactivity
+  '/reactivity': Reactivity,
+  '/computed':  Computed,
 }
 
 export default {
@@ -31,6 +33,7 @@ export default {
 <template>
   <a href="#/">Home</a> |
   <a href="#/template">Template</a> |
-  <a href="#/reactivity">Reactivity</a>
+  <a href="#/reactivity">Reactivity</a> |
+  <a href="#/computed">Computed</a>
   <component :is="currentView" />
 </template>
