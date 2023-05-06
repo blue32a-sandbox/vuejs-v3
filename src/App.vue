@@ -4,6 +4,7 @@ import Computed from './Computed.vue'
 import Conditional from './Conditional.vue'
 import Home from './Home.vue'
 import EventHandling from './EventHandling.vue'
+import Forms from './Forms.vue'
 import List from './List.vue'
 import Template from './Template.vue'
 import Reactivity from './Reactivity.vue'
@@ -16,7 +17,8 @@ const routes = {
   '/class-and-style': ClassAndStyle,
   '/conditional': Conditional,
   '/list': List,
-  '/event-handling': EventHandling
+  '/event-handling': EventHandling,
+  '/forms': Forms
 }
 
 export default {
@@ -46,6 +48,7 @@ export default {
   <a href="#/class-and-style">Class And Style</a> |
   <a href="#/conditional">Conditional</a> |
   <a href="#/list">List</a> |
-  <a href="#/event-handling">Event Handling</a>
+  <a href="#/event-handling">Event Handling</a> |
+  <a href="#/forms">Forms</a>
   <component :is="currentView" />
 </template>
