@@ -9,6 +9,7 @@ import Lifecycle from './Lifecycle.vue'
 import List from './List.vue'
 import Template from './Template.vue'
 import Reactivity from './Reactivity.vue'
+import Watchers from './Watchers.vue'
 
 const routes = {
   '/': Home,
@@ -20,7 +21,8 @@ const routes = {
   '/list': List,
   '/event-handling': EventHandling,
   '/forms': Forms,
-  '/lifecycle': Lifecycle
+  '/lifecycle': Lifecycle,
+  '/watchers': Watchers
 }
 
 export default {
@@ -52,6 +54,7 @@ export default {
   <a href="#/list">List</a> |
   <a href="#/event-handling">Event Handling</a> |
   <a href="#/forms">Forms</a> |
-  <a href="#/lifecycle">Lifecycle</a>
+  <a href="#/lifecycle">Lifecycle</a> |
+  <a href="#/watchers">Watchers</a>
   <component :is="currentView" />
 </template>
