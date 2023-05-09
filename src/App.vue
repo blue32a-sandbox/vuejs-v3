@@ -1,5 +1,6 @@
 <script>
 import ClassAndStyle from './ClassAndStyle.vue'
+import ComponentBasics from './ComponentBasics.vue'
 import Computed from './Computed.vue'
 import Conditional from './Conditional.vue'
 import Home from './Home.vue'
@@ -24,7 +25,8 @@ const routes = {
   '/forms': Forms,
   '/lifecycle': Lifecycle,
   '/watchers': Watchers,
-  '/template-refs': TemplateRefs
+  '/template-refs': TemplateRefs,
+  '/component-basics': ComponentBasics
 }
 
 export default {
@@ -58,6 +60,7 @@ export default {
   <a href="#/forms">Forms</a> |
   <a href="#/lifecycle">Lifecycle</a> |
   <a href="#/watchers">Watchers</a> |
-  <a href="#/template-refs">Template Refs</a>
+  <a href="#/template-refs">Template Refs</a> |
+  <a href="#/component-basics">Component Basics</a>
   <component :is="currentView" />
 </template>
